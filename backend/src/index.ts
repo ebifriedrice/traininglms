@@ -39,6 +39,7 @@ async function bootstrap() {
 
   app.get('/', (_req, res) => res.send('XYZ LMS Backend is running. GraphQL at /graphql'));
 
+
   app.listen(env.PORT, () => {
     console.log(`Server listening on http://localhost:${env.PORT}`);
   });
