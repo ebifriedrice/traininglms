@@ -37,7 +37,7 @@ async function bootstrap() {
   await server.start();
   app.use('/graphql', expressMiddleware(server, { context: buildContext }));
 
-  app.get('/', (_req, res) => res.send('XYZ LMS Backend is running. GraphQL at /graphql'));
+  app.get('/', (_req, res) => res.send('LMS Backend is running. GraphQL at /graphql'));
 
 
   app.listen(env.PORT, () => {
